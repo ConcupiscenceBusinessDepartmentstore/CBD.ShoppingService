@@ -1,0 +1,23 @@
+﻿version: '3.8'
+services:
+  identity_api:
+    build: .
+    command: 'dotnet CBD.ShoppingService.WebAPI.dll --urls="http://*:7002;https://*:8002" --environment="Development"'
+    restart: unless-stopped
+    ports:
+      - 7002:7002
+    networks:
+      - cbd_net
+    depends_on:
+      - identity_cache
+      
+  identity_cache:
+    image: redis:6.2.6-alpine
+    restart: unless-stopped
+    command: redis-server --loglevel warning
+    networks:
+      - cbd_net
+    
+networks:
+  cbd_net:
+    name: cbd_net
