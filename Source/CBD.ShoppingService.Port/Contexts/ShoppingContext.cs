@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using CBD.ShoppingService.Core.Models;
 
-namespace ShoppingService.Port.Contexts;
+namespace CBD.ShoppingService.Port.Contexts;
 
 public class ShoppingContext : DbContext {
 	public ShoppingContext(DbContextOptions options) : base(options) {
