@@ -1,4 +1,4 @@
-﻿namespace ShoppingService.Core.Enums; 
+﻿namespace CBD.ShoppingService.Core.Enums; 
 
 public enum Roles {
 	Administrator,

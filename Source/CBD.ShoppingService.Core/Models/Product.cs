@@ -1,4 +1,4 @@
-﻿namespace ShoppingService.Core.Models;
+﻿namespace CBD.ShoppingService.Core.Models;
 
 public class Product {
 	public Product() {
