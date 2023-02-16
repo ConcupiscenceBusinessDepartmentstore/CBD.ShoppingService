@@ -23,4 +23,9 @@
       </Content>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\CBD.ShoppingService.Core\CBD.ShoppingService.Core.csproj" />
+      <ProjectReference Include="..\CBD.ShoppingService.Port\CBD.ShoppingService.Port.csproj" />
+    </ItemGroup>
+
 </Project>
