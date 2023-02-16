@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{0FA4E8FF-832E-4583-82B0-71B25A51C2B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{C6ABA60F-5674-4B30-BAA4-938F4E723390}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CBD.ShoppingService.Core", "Source\CBD.ShoppingService.Core\CBD.ShoppingService.Core.csproj", "{EEF4E79B-D870-46CA-902B-AFFD85B55754}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CBD.ShoppingService.Port", "Source\CBD.ShoppingService.Port\CBD.ShoppingService.Port.csproj", "{8FD057D2-9FC4-434A-98F9-95025F72D1CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CBD.ShoppingService.WebAPI", "Source\CBD.ShoppingService.WebAPI\CBD.ShoppingService.WebAPI.csproj", "{5313ED82-D23C-4362-BB8C-5FA1EF77B16F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EEF4E79B-D870-46CA-902B-AFFD85B55754} = {0FA4E8FF-832E-4583-82B0-71B25A51C2B6}
+		{8FD057D2-9FC4-434A-98F9-95025F72D1CE} = {0FA4E8FF-832E-4583-82B0-71B25A51C2B6}
+		{5313ED82-D23C-4362-BB8C-5FA1EF77B16F} = {0FA4E8FF-832E-4583-82B0-71B25A51C2B6}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EEF4E79B-D870-46CA-902B-AFFD85B55754}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEF4E79B-D870-46CA-902B-AFFD85B55754}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEF4E79B-D870-46CA-902B-AFFD85B55754}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEF4E79B-D870-46CA-902B-AFFD85B55754}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FD057D2-9FC4-434A-98F9-95025F72D1CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FD057D2-9FC4-434A-98F9-95025F72D1CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FD057D2-9FC4-434A-98F9-95025F72D1CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FD057D2-9FC4-434A-98F9-95025F72D1CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5313ED82-D23C-4362-BB8C-5FA1EF77B16F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5313ED82-D23C-4362-BB8C-5FA1EF77B16F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5313ED82-D23C-4362-BB8C-5FA1EF77B16F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5313ED82-D23C-4362-BB8C-5FA1EF77B16F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
