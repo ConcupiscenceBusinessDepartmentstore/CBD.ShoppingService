@@ -1,5 +1,4 @@
-﻿using System.ComponentModel;
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.Net.Http.Headers;
@@ -79,10 +78,12 @@ public class ProductService : IProductService {
 		try {
 			if ((!await serviceIdentity.CheckIfUserHasGlobalRole(
 				    accessorHttpContext.HttpContext.Request.Headers[HeaderNames.Authorization], 
+				    // ReSharper disable once HeapView.BoxingAllocation
 				    Roles.Administrator.ToString()
 			    ))
 			    || (!await serviceIdentity.CheckIfUserHasGlobalRole(
 				    accessorHttpContext.HttpContext.Request.Headers[HeaderNames.Authorization], 
+				    // ReSharper disable once HeapView.BoxingAllocation
 				    Roles.Trader.ToString()
 			    ))
 			   )
@@ -121,10 +122,12 @@ public class ProductService : IProductService {
 		try {
 			if ((!await serviceIdentity.CheckIfUserHasGlobalRole(
 				    accessorHttpContext.HttpContext.Request.Headers[HeaderNames.Authorization], 
+				    // ReSharper disable once HeapView.BoxingAllocation
 				    Roles.Administrator.ToString()
 			    ))
 			    || (!await serviceIdentity.CheckIfUserHasGlobalRole(
 				    accessorHttpContext.HttpContext.Request.Headers[HeaderNames.Authorization], 
+				    // ReSharper disable once HeapView.BoxingAllocation
 				    Roles.Trader.ToString()
 			    ))
 			   )
